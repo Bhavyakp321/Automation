@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.2 on win32)" generated="20230904 09:54:05.473" rpa="false" schemaversion="4">
+<suite id="s1" name="Automation 2" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2">
+<suite id="s1-s1" name="Framework" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2\Framework">
+<suite id="s1-s1-s1" name="TestCycles" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2\Framework\TestCycles">
+<suite id="s1-s1-s1-s1" name="Module 2" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2\Framework\TestCycles\Module 2">
+<suite id="s1-s1-s1-s1-s1" name="Testscenario" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2\Framework\TestCycles\Module 2\testscenario">
+<suite id="s1-s1-s1-s1-s1-s1" name="Login1" source="C:\Users\Bhavya kP-Int-222\PycharmProjects\Automation_2\Framework\TestCycles\Module 2\testscenario\login1.robot">
+<test id="s1-s1-s1-s1-s1-s1-t1" name="Login Page1" line="6">
+<kw name="Open Login Page" library="login_keywords">
+<arg>https://demowebshop.tricentis.com/</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230904 09:54:05.611" endtime="20230904 09:54:05.611"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230904 09:54:05.612" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/'.</msg>
+<status status="PASS" starttime="20230904 09:54:05.612" endtime="20230904 09:54:11.899"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230904 09:54:11.899" endtime="20230904 09:54:14.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[text()='Log in']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 09:54:14.019" level="INFO">Clicking element 'xpath://a[text()='Log in']'.</msg>
+<status status="PASS" starttime="20230904 09:54:14.018" endtime="20230904 09:54:18.480"/>
+</kw>
+<status status="PASS" starttime="20230904 09:54:05.611" endtime="20230904 09:54:18.480"/>
+</kw>
+<kw name="Fill LoginPage1" library="login_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailFieldLocator}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230904 09:54:18.483" level="INFO">Typing text 'mdummy316@gmail.com' into text field 'xpath://*[@id="Email"]'.</msg>
+<status status="PASS" starttime="20230904 09:54:18.482" endtime="20230904 09:54:24.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PasswordFieldLocator}</arg>
+<arg>${password2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230904 09:54:24.591" level="INFO">Typing text 'soum@321' into text field 'xpath://*[@id="Password"]'.</msg>
+<status status="PASS" starttime="20230904 09:54:24.590" endtime="20230904 09:54:30.688"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LoginButtonLocator1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230904 09:54:30.689" level="INFO">Clicking element 'xpath://input[@type='submit' and @value='Log in']'.</msg>
+<status status="PASS" starttime="20230904 09:54:30.688" endtime="20230904 09:54:35.178"/>
+</kw>
+<status status="PASS" starttime="20230904 09:54:18.481" endtime="20230904 09:54:35.179"/>
+</kw>
+<doc>Test the login process on the demo webshop</doc>
+<status status="PASS" starttime="20230904 09:54:05.611" endtime="20230904 09:54:35.180"/>
+</test>
+<status status="PASS" starttime="20230904 09:54:05.494" endtime="20230904 09:54:35.183"/>
+</suite>
+<status status="PASS" starttime="20230904 09:54:05.493" endtime="20230904 09:54:35.184"/>
+</suite>
+<status status="PASS" starttime="20230904 09:54:05.492" endtime="20230904 09:54:35.185"/>
+</suite>
+<status status="PASS" starttime="20230904 09:54:05.491" endtime="20230904 09:54:35.185"/>
+</suite>
+<status status="PASS" starttime="20230904 09:54:05.489" endtime="20230904 09:54:35.186"/>
+</suite>
+<status status="PASS" starttime="20230904 09:54:05.474" endtime="20230904 09:54:35.187"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Automation 2">Automation 2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Framework">Automation 2.Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TestCycles">Automation 2.Framework.TestCycles</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Module 2">Automation 2.Framework.TestCycles.Module 2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Testscenario">Automation 2.Framework.TestCycles.Module 2.Testscenario</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1-s1" name="Login1">Automation 2.Framework.TestCycles.Module 2.Testscenario.Login1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
