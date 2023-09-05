@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Bhavyakp321/Automation.git']])
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                dir('C:\\Users\\Bhavya kP-Int-222\\PycharmProjects\\Automation_2') {
+
+                    bat '"C:\\Users\\Bhavya kP-Int-222\\Desktop\\Automate\\run_tests.bat"'
+                }
+            }
+        }
+    }
+}
